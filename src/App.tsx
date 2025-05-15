@@ -1,11 +1,14 @@
+import AppLayout from './components/AppLayout';
+import Board from './components/Board';
 
-function App() {
-
+const App = () => {
   return (
-    <div className="bg-red-100">
-      Hello World
-    </div>
-  )
-}
+    <AppLayout>
+      <Board />
+      <Board />
+      <Board />
+    </AppLayout>
+  );
+};
 
-export default App
+export default App;
